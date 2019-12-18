@@ -5,10 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <style>
+        h1{ 
+            color: goldenrod;
+            background-color: black;
+        }
+        p{
+            color: white;
+            background-color: gray;
+        }
+        .big{
+            font-size : 50px;
+        }
+        .dream{
+            font-size: 10px;
+        }
+    </style>
 </head>
 <body>
     <h1>저는 이경호입니다.</h1>
-    <p> 저는 용인에 살고 있고, 연봉은 많이 주세요.</p>
-    
+    <p class ="big"> 저는 용인에 살고 있고, 언리얼 VR컨텐츠 제작 전문가 입니다.</p>
+    <p class ="dream"> 제 꿈은 VR 컨텐츠 게임 제작전문가가 되어 TED 강연을 하는 것입니다.</p>
+    <div class ="big">to be continue...</div>
+    <button id = "btn">클릭금지!</button>
+    <script>
+        const btn = document.querySelector('#btn');
+        btn.addEventListener('click',function(){
+            alert('클릭 하지마시오!');
+        })
+    </script>
 </body>
 </html>
